@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>SOS</title>
+    <meta name="description"/>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a href="#" class="header__top-logo"
+        ><img class="logo__img" src="./img/logo.png" alt="Logo"
+      /></a>
+      <nav class="header__top-navmenu">
+        <a class="navmenu__link" href="#">MAIN</a>
+        <a class="navmenu__link" href="#">about</a>
+        <a class="navmenu__link" href="#">game features</a>
+        <a class="navmenu__link" href="#">System requirements</a>
+        <a class="navmenu__link" href="#">quotes</a>
+      </nav>
+      <div class="header__top-right">
+        <div class="header__top-lang">
+          eng
+          <img
+            class="lang__arrow"
+            src="./img/arrow_down_small.svg"
+            alt="icon arrow"
+          />
+          <div class="lang__select-other no__visible-lang">
+            <a class="select-other__item" href="#">rus</a>
+            <a class="select-other__item" href="#">fra</a>
+            <a class="select-other__item" href="#">deu</a>
+          </div>
+        </div>
+        <div class="header__top-pc">
+          <img class="pc__img" src="./img/xbox_icon.svg" alt="xbox_icon" />
+          <img class="pc__img" src="./img/steam_icon.svg" alt="steam_icon" />
+        </div>
+      </div>
+    </div>
+    <div class="header__main">
+      <h1 class="header__main-title">SURVIVE AT ALL COSTS</h1>
+      <p class="header__main-desc">Experience new social battle royale game</p>
+      <button class="header__main-btn btn">
+        <span>Buy now on steam</span>$14.99
+      </button>
+    </div>
+    <div class="header__bottom">
+      <button onclick="window.location.href = '#about'" class="header__bottom-btn">
+        <p class="btn__text">The story</p>
+        <img
+          class="btn__arrow"
+          src="./img/arrow_down.svg"
+          alt="icon arrow down"
+        />
+      </button>
+    </div>
+  </div>
+</header>
+
+  <section class="about" id="about">
+  <div class="container">
+    <div class="about__wrapper">
+      <div class="about__game">
+        <h6 class="about__game-subtitle subtitle">What is SOS?</h6>
+        <h1 class="about__game-title title">social battle royale game</h1>
+        <p class="about__game-desc">
+          Each round, <strong>you</strong> and <strong>15</strong> other
+          contestants compete to escape a deadly island filled with monsters.
+          The trick is: three people can survive. Will you run solo or form
+          friendships with others to escape?<br /><br />Making the right
+          decisions could be the difference between <span>life and death.</span>
+        </p>
+      </div>
+      <div class="about__slider">
+        <ul class="slider__accordion">
+          <li class="slider__accordion-item">
+            <img
+              class="slider__accordion-img"
+              src="./img/slide1.jpg"
+              alt="image slide 1"
+            />
+          </li>
+          <li class="slider__accordion-item">
+            <img
+              class="slider__accordion-img"
+              src="./img/slide2.jpg"
+              alt="image slide 2"
+            />
+          </li>
+          <li class="slider__accordion-item">
+            <img
+              class="slider__accordion-img"
+              src="./img/slide3.jpg"
+              alt="image slide 3"
+            />
+          </li>
+        </ul>
+        <ul class="slider__dots">
+          <li class="slider__dost-item"></li>
+          <li class="slider__dost-item"></li>
+          <li class="slider__dost-item"></li>
+        </ul>
+        <button class="slider__arrow">
+          <img
+            class="slider__arrow-img"
+            src="./img/arrow_down.svg"
+            alt="image arrow for sliders"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="features">
+  <div class="container">
+    <div class="features__wrapper">
+      <h3 class="features__subtitle subtitle">What’s so special?</h3>
+      <h1 class="features__title title">features</h1>
+      <div class="features__accordion">
+        <div class="accordion__item">
+          <div class="accordion__item-title active__title">SURVIVE AT ALL COSTS</div>
+          <p class="accordion__item-desc visible">
+            You have 30 minutes to find a relic, signal for extraction, and grab
+            one of three spots on the rescue chopper.
+          </p>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__item-title">CREATE ALLIES AND ENEMIES</div>
+          <p class="accordion__item-desc">
+            You have 30 minutes to find a relic, signal for extraction, and grab
+            one of three spots on the rescue chopper.
+          </p>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__item-title">IMPRESS THE AUDIENCE</div>
+          <p class="accordion__item-desc">
+            You have 30 minutes to find a relic, signal for extraction, and grab
+            one of three spots on the rescue chopper.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <body>
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>
