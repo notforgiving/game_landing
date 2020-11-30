@@ -113,7 +113,7 @@ button {
 }
 
 .container {
-  max-width: 1240px;
+  width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -123,14 +123,13 @@ button {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 4px;
   color: #1A1917;
-  text-transform: capitalize;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
   padding: 20px 35px;
-  -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .btn:hover {
@@ -681,6 +680,334 @@ button {
     opacity: 0;
     height: 0%;
   }
+}
+
+.system {
+  background-image: url(./../img/system.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 145px 0 170px 0;
+}
+
+.system__subtitle {
+  text-align: center;
+}
+
+.system__title {
+  text-align: center;
+  margin-bottom: 133px;
+}
+
+.system__table {
+  height: 400px;
+  background-image: url(./../img/border_table.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.system__table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 573px;
+  margin-bottom: 27px;
+}
+
+.system__table-colomn {
+  padding: 15px;
+  width: 276px;
+}
+
+.system__table-colomn-one {
+  padding: 15px;
+}
+
+.colomn__title {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.colomn__data {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.thinks {
+  padding: 159px 0 147px 0;
+  background-image: url(./../img/recall_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thinks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thinks__about {
+  width: 50%;
+}
+
+.thinks__about-subtitle {
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.thinks__about-title {
+  margin-bottom: 50px;
+}
+
+.thinks__about-text {
+  max-width: 434px;
+  margin-bottom: 50px;
+}
+
+.thinks__people-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  width: 452px;
+  margin-bottom: 30px;
+  padding: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.thinks__people-item:nth-child(odd) {
+  margin-left: 100px;
+}
+
+.thinks__people-item:hover {
+  -webkit-box-shadow: 5px 4px 20px 0px #feb54614;
+          box-shadow: 5px 4px 20px 0px #feb54614;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: perspective(800px) rotateY(15deg);
+          transform: perspective(800px) rotateY(15deg);
+}
+
+.people-item__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.people-item__img {
+  position: relative;
+  width: 65px;
+  height: 65px;
+}
+
+.people-item__img::after {
+  position: absolute;
+  content: '';
+  top: 4px;
+  left: 7px;
+  width: 100%;
+  height: 100%;
+  background-color: #FFB548;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.people-item__head-present {
+  position: relative;
+  z-index: 1;
+  width: 65px;
+  height: 65px;
+}
+
+.people-item__head-about-people {
+  margin-right: 30px;
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.people-item__head-name {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  display: block;
+}
+
+.people-item__head-position {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.people-item__recall {
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.people-item__date {
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.subscribe {
+  background-image: url(./../img/subscribe.png);
+  background-repeat: no-repeat;
+  padding-top: 49px;
+  padding-left: 50%;
+  padding-bottom: 20px;
+}
+
+.subscribe__subtitle {
+  margin-top: 170px;
+}
+
+.subscribe__title {
+  margin-bottom: 45px;
+}
+
+.subscribe__text {
+  margin-bottom: 80px;
+}
+
+.subscribe__form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__form::before {
+  position: absolute;
+  content: 'Your email address';
+  top: 6px;
+  left: 12px;
+  width: 100%;
+  height: 10px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.subscribe__form-input {
+  margin-right: 17px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  border: none;
+  width: 366px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFB548;
+  padding-left: 12px;
+  padding-top: 10px;
+}
+
+.footer {
+  padding-bottom: 51px;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 33px;
+}
+
+.footer__menu-logo {
+  width: 90px;
+  height: 90px;
+}
+
+.footer__menu-nav {
+  padding-top: 70px;
+}
+
+.menu-nav__link {
+  margin: 0 15px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__menu-social {
+  padding-top: 70px;
+}
+
+.menu-social__link {
+  margin: 0 30px;
+}
+
+.footer__develop {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer__develop-data {
+  margin-right: 416px;
+  opacity: 0.5;
+}
+
+.footer__develop-link {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-right: 10px;
+  border-right: 1px solid #ffffff;
+}
+
+.footer__develop-link:last-child {
+  border: none;
 }
 
 @media (max-width: 1024px) {
