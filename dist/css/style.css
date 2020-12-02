@@ -89,6 +89,10 @@ li {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Open Sans, sans-serif;
   font-size: 18px;
@@ -113,9 +117,9 @@ button {
 }
 
 .container {
-  width: 1240px;
+  width: 1570px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .btn {
@@ -123,10 +127,10 @@ button {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 4px;
   color: #1A1917;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 22px;
   text-align: center;
-  padding: 20px 35px;
+  padding: 25px 50px;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
@@ -160,14 +164,16 @@ button {
   background-image: url("../img/header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: bottom;
   height: 100vh;
-  padding-top: 20px;
+  padding-top: 30px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  position: relative;
 }
 
 /*Верхняя часть*/
@@ -185,12 +191,12 @@ button {
 }
 
 .logo__img {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
 }
 
 .navmenu__link {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .header__top-right {
@@ -212,10 +218,18 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 1;
 }
 
 .no__visible-lang {
-  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .lang__select-other {
@@ -246,8 +260,8 @@ button {
 }
 
 .pc__img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 0 9px;
 }
 
@@ -260,21 +274,21 @@ button {
 .header__main-title {
   font-family: 'Bebas Neue';
   font-weight: bold;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 100px;
+  line-height: 85px;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 7px;
   text-transform: uppercase;
-  padding-top: 247px;
+  padding-top: 303px;
 }
 
 .header__main-desc {
   font-family: 'Bebas Neue';
   font-weight: bold;
   font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  margin-bottom: 28px;
+  line-height: 35px;
+  letter-spacing: 7px;
+  margin-bottom: 50px;
 }
 
 .header__main-btn span {
@@ -287,7 +301,10 @@ button {
 
 .header__bottom {
   text-align: center;
-  padding-top: 363px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
 }
 
 .header__bottom-btn:hover .btn__arrow {
@@ -312,19 +329,29 @@ button {
   background-image: url(./../img/what_is_it_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  background-position-y: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 187px;
-  padding-bottom: 232px;
+  height: 80vh;
 }
 
 .about__game {
-  width: 49%;
-  margin-right: 28px;
+  width: 40%;
+  margin-right: 40px;
 }
 
 .about__game-subtitle {
@@ -335,6 +362,7 @@ button {
 .about__game-title {
   margin-bottom: 72px;
   position: relative;
+  max-width: 410px;
 }
 
 .about__game-title::after {
@@ -371,17 +399,20 @@ button {
 }
 
 .about__slider {
-  width: 52%;
+  width: 59%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider__accordion {
   position: relative;
   z-index: 10;
-  width: 100%;
+  width: 75%;
 }
 
 .slider__accordion-item {
@@ -397,8 +428,8 @@ button {
 }
 
 .slider__accordion-img {
-  width: 500px;
-  height: 610px;
+  width: 600px;
+  height: 730px;
   border-radius: 10px;
 }
 
@@ -408,7 +439,7 @@ button {
   -webkit-transform: translateX(-70%);
       -ms-transform: translateX(-70%);
           transform: translateX(-70%);
-  bottom: 20px;
+  bottom: 165px;
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,8 +449,8 @@ button {
 .slider__dost-item {
   border-radius: 50%;
   border: 2px solid #ffffff;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   margin: 0 30px;
   cursor: pointer;
   -webkit-transition: all 0.1s;
@@ -549,11 +580,14 @@ button {
 }
 
 .features {
-  background-image: url(./../img/features_bg.jpg);
-  padding-top: 167px;
-  padding-bottom: 258px;
+  background-image: url(../img/features_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
 }
 
 .features__wrapper {
@@ -572,6 +606,10 @@ button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.accordion__item {
+  margin-bottom: 20px;
 }
 
 .accordion__item-title {
@@ -686,7 +724,9 @@ button {
   background-image: url(./../img/system.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: bottom;
   padding: 145px 0 170px 0;
+  height: 100vh;
 }
 
 .system__subtitle {
@@ -699,7 +739,7 @@ button {
 }
 
 .system__table {
-  height: 400px;
+  height: 530px;
   background-image: url(./../img/border_table.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -709,13 +749,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 573px;
-  margin-bottom: 27px;
+  width: 726px;
+  margin-bottom: 71px;
 }
 
 .system__table-colomn {
   padding: 15px;
-  width: 276px;
+  width: 366px;
 }
 
 .system__table-colomn-one {
@@ -744,6 +784,7 @@ button {
   background-image: url(./../img/recall_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .thinks__wrapper {
@@ -886,6 +927,7 @@ button {
   padding-top: 49px;
   padding-left: 50%;
   padding-bottom: 20px;
+  background-position-x: 259px;
 }
 
 .subscribe__subtitle {
@@ -925,7 +967,7 @@ button {
 
 .subscribe__form-input {
   margin-right: 17px;
-  height: 60px;
+  height: 80px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 5px;
   border: none;
@@ -964,12 +1006,12 @@ button {
 }
 
 .menu-nav__link {
-  margin: 0 15px;
-  font-size: 12px;
+  margin: 0 29px;
+  font-size: 15px;
   line-height: 16px;
-  letter-spacing: 0.1em;
+  letter-spacing: 2Px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .footer__menu-social {
@@ -989,10 +1031,12 @@ button {
   font-size: 14px;
   line-height: 19px;
   color: #FFFFFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__develop-data {
-  margin-right: 416px;
   opacity: 0.5;
 }
 
@@ -1003,11 +1047,77 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
   padding-right: 10px;
+  padding-left: 10px;
   border-right: 1px solid #ffffff;
 }
 
 .footer__develop-link:last-child {
   border: none;
+}
+
+.footer .facebook {
+  fill: #fff;
+}
+
+.footer .twitter {
+  fill: #fff;
+}
+
+.footer .youtube {
+  fill: #fff;
+}
+
+.footer .twitch {
+  fill: #fff;
+}
+
+.footer .facebook:hover {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #4267B2;
+}
+
+.footer .twitter:hover {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #1DA1F2;
+}
+
+.footer .youtube:hover {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #FF0000;
+}
+
+.footer .twitch:hover {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #6441A4;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1200px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 1024px) {

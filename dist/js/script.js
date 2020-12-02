@@ -43,7 +43,7 @@ for (let i = 0; i < amount; i++) {
     list[i].style.left = `${position}px`;
   }
 
-  dotsItem[i].id = i
+  dotsItem[i].id = i;
 
   if (list[i].style.zIndex == zIndexActive) {
     list[i].classList.add(`${activeClass}`);
@@ -63,7 +63,6 @@ btn.addEventListener("click", () => {
     list[amount - 1].style.cssText = tempStyle;
 
     if (list[i].style.zIndex == zIndexActive) {
-      console.log('active')
       list[i].classList.add(`${activeClass}`);
       dotsItem[i].classList.add(`${activeDot}`);
     } else {
@@ -74,24 +73,34 @@ btn.addEventListener("click", () => {
   }
 });
 
-dotsItem.forEach((item)=>{
-  item.addEventListener('click',()=>{
-    for (let i = 0; i < amount; i++) {
-      tempStyle = list[0].style.cssText;
-      list[0].style.cssText = list[item.id].style.cssText;
-      list[item.id].style.cssText = tempStyle;
+dotsItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    let stop = true;
+    while (stop) {
+      if (stop) {
+        for (let i = 0; i < amount; i++) {
+          tempStyle = list[i].style.cssText;
+          list[i].style.cssText = list[amount - 1].style.cssText;
+          list[amount - 1].style.cssText = tempStyle;
 
-      if (list[0].style.zIndex == zIndexActive) {
-        list[0].classList.add(`${activeClass}`);
-        dotsItem[0].classList.add(`${activeDot}`);
-      } else {
-        list[i].classList.remove(`${activeClass}`);
-        dotsItem[i].classList.remove(`${activeDot}`);
-        list[i].style.animation = `1.5s ease-out downopacity`;
+          if (list[i].style.zIndex == zIndexActive) {
+            list[i].classList.add(`${activeClass}`);
+            dotsItem[i].classList.add(`${activeDot}`);
+          } else {
+            list[i].classList.remove(`${activeClass}`);
+            dotsItem[i].classList.remove(`${activeDot}`);
+            list[i].style.animation = `1.5s ease-out downopacity`;
+          }
+
+          if (list[item.id].style.zIndex == zIndexActive) {
+            stop = false;
+            break;
+          }
+        }
       }
     }
-  })
-})
+  });
+});
 
 const featuresAcc = document.querySelector('.features__accordion')
 const accItems = featuresAcc.querySelectorAll('.accordion__item')
@@ -125,3 +134,10 @@ for(let i=0;i<maxcount;i++){
 
 
 
+
+const langSwitch = document.querySelector('.header__top-lang')
+const langs =document.querySelector('.lang__select-other')
+
+langSwitch.addEventListener('click',()=>{
+  langs.classList.toggle('no__visible-lang')
+})
