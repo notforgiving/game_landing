@@ -1,0 +1,77 @@
+.features
+  background-image: url(../img/features_bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  display: flex
+  height: 100vh
+  &__wrapper
+    padding-left: 60%
+  &__subtitle
+    margin-bottom: 10px
+  &__title
+    margin-bottom: 70px
+  &__accordion
+    height: fit-content
+.accordion__item
+  margin-bottom: 20px
+  &-title
+    font-family: 'Bebas Neue'
+    font-weight: bold
+    font-size: 36px
+    line-height: 36px
+    letter-spacing: 2px
+    color: $accent
+    margin-bottom: 15px
+    cursor: pointer
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 14px
+      height: 14px
+      border: 2px solid #fff
+      border-radius: 50%
+      top: 50%
+      left: -45px
+      transform: translateY(-50%)
+  &-desc
+    font-family: 'Open Sans'
+    font-size: 18px
+    line-height: 22px
+    color: #FFFFFF
+    margin-bottom: 27px
+    height: 0
+    opacity: 0
+    transition: all 0.5s
+.visible
+  height: 100%
+  opacity: 1
+  animation: accordIN 1s ease-in forwards
+
+.accordion__item-title.active__title
+  &::before
+    background-color: #fff
+  &::after
+    content: ''
+    position: absolute
+    width: 2px
+    height: 105px
+    background-color: #fff
+    left: -37px
+    top: 69%
+@keyframes accordIN
+  0%
+    opacity: 0
+    height: 0%
+  100%
+    opacity: 1
+    height: 100%
+
+@keyframes accordOUT
+  0%
+    opacity: 1
+    height: 100%
+  100%
+    opacity: 0
+    height: 0%

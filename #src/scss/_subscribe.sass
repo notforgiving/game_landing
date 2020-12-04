@@ -1,0 +1,41 @@
+.subscribe
+  background-image: url(./../img/subscribe.png)
+  background-repeat: no-repeat
+  padding-top: 49px
+  padding-left: 50%
+  padding-bottom: 20px
+  background-position-x: 259px
+  &__subtitle
+    margin-top: 170px
+  &__title
+    margin-bottom: 45px
+  &__text
+    margin-bottom: 80px
+  &__form
+    position: relative
+    display: flex
+    align-items: center
+    &::before
+      position: absolute
+      content: 'Your email address'
+      top: 6px
+      left: 12px
+      width: 100%
+      height: 10px
+      color: #FFFFFF
+      opacity: 0.5
+      font-size: 14px
+      line-height: 19px
+  &__form-input
+    margin-right: 17px
+    height: 80px
+    background: rgba(255, 255, 255, 0.08)
+    border-radius: 5px
+    border: none
+    width: 366px
+    font-size: 18px
+    line-height: 25px
+    color: $accent
+    padding-left: 12px
+    padding-top: 10px
+  &__form-btn
